@@ -1,0 +1,27 @@
+{
+  "embed_dim": 64,
+  "num_layers": 3,
+  "num_heads": 2,
+  "TG_in_one_day": 288,
+  "forward_expansion": 4,
+  "dropout_rate": 0,
+
+  "scaler": "standard",
+  "load_external": false,
+  "normal_external": false,
+  "ext_scaler": "none",
+  "add_time_in_day": false,
+  "add_day_in_week": false,
+
+  "max_epoch": 500,
+  "learner": "adam",
+  "learning_rate": 0.001,
+  "lr_decay": true,
+  "lr_scheduler": "multisteplr",
+  "lr_decay_ratio": 0.7,
+  "steps": [15, 40, 70, 100, 150, 200, 250, 300, 350],
+  "clip_grad_norm": true,
+  "max_grad_norm": 1,
+  "use_early_stop": true,
+  "patience": 60
+}

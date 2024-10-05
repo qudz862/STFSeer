@@ -1,0 +1,80 @@
+{
+  "load_external": false,
+  "pad_with_last_sample": false,
+  "scaler": "minmax01",
+  "normal_external": true,
+  "ext_scaler": "minmax01",
+  "train_rate": 0.5,
+  "eval_rate": 0.25,
+  "lr_patience": 10,
+  "distance_inverse": true,
+  "add_day_in_week": false,
+  "add_time_in_day": false,
+  "time_unit": "Hour",
+  "preprocess": false,
+  "input_window": 24,
+  "output_window": 12,
+  "output_offset": 1,
+  "augmented_data": false,
+  "mixup": "no_mixup",
+  "EMD": "no_EMD",
+  "imf_num": 5,
+  "loss_type": "ERM",
+  "weight_file": "34337",
+  "group_file": "34337",
+  "compute_metadata": false,
+  "features": ["PM2.5", "PM10", "SO2", "NO2", "CO", "O3", "U", "V", "TEMP", "RH", "PSFC"],
+  "point_metadata": ["PM2.5-target_val", "PM2.5-temporal_state_vals", "RH-target_val", "PSFC-target_val", "PSFC-space_comp_state_vals"],
+  "anomaly_types": ["z_score_anomaly", "neighbor_anomaly", "temporal_anomaly"],
+  "focus_th": 115,
+  "focus_levels": [0, 35, 115, 350, 500, 2000],
+  "forecast_scope": {
+    "scope_mode": "range",
+    "step_unit": 3,
+    "sample_method": "log",
+    "sample_num": 4
+  },
+  "phase_params": {
+    "min_len": 24,
+    "max_gap_len": 3,
+    "attributes": ["life_span", "space_focus_cnt", "time_val", "time_focus_val", "time_focus_cnt", "focus_level_hist", "mean_duration", "mean_focus_grids", "max_step_focus_grids", "mean_intensity", "max_step_intensity", "max_value", "step_centroids", "mean_move_distance"],
+    "error_metrics": ["space_res_abs", "res_distribution", "phase_RMSE", "phase_ACC", "phase_POD", "phase_FAR"]
+  },
+  "event_params": {
+    "connected_dis_th": 25,
+    "move_dis_th": 50,
+    "related_dis_th": 75,
+    "min_grid_num": 1,
+    "val_change_th": 0.1,
+    "area_change_th": 0.1,
+    "area_remain_th": 0.9,
+    "attributes": ["area_type", "pre_area", "change_area", "intensity_type", "pre_intensity", "change_intensity", "move_type", "move_dis"],
+    "error_metrics": ["area_error", "intensity_error", "shift_error", "union_points_error"]
+  },
+  "distribution_params": {
+    "val_step": 10,
+    "extreme_percentile": 95
+  },
+  "range_params": {
+    "scope": "Seg_Points",
+    "sup_th": 0.003,
+    "err_th": 5,
+    "bin_num": 8,
+    "step_len": {
+      "PM2.5-target_val": 10, "PM2.5-temporal_state_vals": 10, "RH-target_val": 1, "PSFC-target_val": 100, "PSFC-space_comp_state_vals": 100
+    }
+  },
+  "slice_params": {
+    "data_scope": "All_Data",
+    "mode": "Polarity_Pruning",
+    "polarity": "High_Error",
+    "frequent_sup_th": 0.001,
+    "err_diff_th": 2,
+    "err_th": 20,
+    "redundancy_th": 0.4,
+    "phase_id": "None"
+  },
+  "exp_id": 14172,
+  "train": false,
+  "eval": false
+}

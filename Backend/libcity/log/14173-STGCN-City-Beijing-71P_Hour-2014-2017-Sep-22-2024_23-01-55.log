@@ -1,0 +1,97 @@
+2024-09-22 23:01:55,941 - INFO - Log directory: ./libcity/log
+2024-09-22 23:01:55,947 - INFO - Begin pipeline, task=air_quality_pred, model_name=STGCN, dataset_name=City-Beijing-71P_Hour-2014-2017, exp_id=14173
+2024-09-22 23:01:55,947 - INFO - {'task': 'air_quality_pred', 'model': 'STGCN', 'dataset': 'City-Beijing-71P_Hour-2014-2017', 'saved_model': True, 'train': False, 'seed': 0, 'load_external': False, 'pad_with_last_sample': False, 'scaler': 'minmax01', 'normal_external': True, 'ext_scaler': 'minmax01', 'train_rate': 0.5, 'eval_rate': 0.25, 'lr_patience': 10, 'distance_inverse': True, 'add_day_in_week': False, 'add_time_in_day': False, 'time_unit': 'Hour', 'preprocess': False, 'input_window': 24, 'output_window': 12, 'output_offset': 1, 'augmented_data': True, 'aug_params': {'EMD': 'MEMD', 'imf_num': 5, 'tol': 0.05, 'EMD_rounds': 2, 'mixup': 'balanced_mixup', 'mixup_rate': 1.0}, 'loss_type': 'Group_DRO', 'weight_file': '73959', 'group_file': '73959', 'compute_metadata': False, 'features': ['PM2.5', 'PM10', 'SO2', 'NO2', 'CO', 'O3', 'U', 'V', 'TEMP', 'RH', 'PSFC'], 'point_metadata': ['PM2.5-target_val', 'PM2.5-temporal_state_vals', 'PM2.5-temporal_context_mean', 'PM2.5-temporal_context_trend', 'PM2.5-space_comp_state_vals', 'PM2.5-space_diff_state_vals'], 'anomaly_types': ['z_score_anomaly', 'neighbor_anomaly', 'temporal_anomaly'], 'entity_metrics': ['area_error', 'intensity_error', 'shift_error', 'union_points_error'], 'focus_th': 115, 'focus_levels': [0, 35, 115, 250, 350, 500, 2000], 'forecast_scope': {'scope_mode': 'range', 'step_unit': 3, 'sample_method': 'log', 'sample_num': 4}, 'phase_params': {'min_len': 15, 'max_gap_len': 3, 'attributes': ['life_span', 'space_focus_cnt', 'time_val', 'time_focus_val', 'time_focus_cnt', 'focus_level_hist', 'mean_duration', 'mean_focus_grids', 'max_step_focus_grids', 'mean_intensity', 'max_step_intensity', 'max_value', 'step_centroids', 'mean_move_distance'], 'error_metrics': ['space_res_abs', 'res_distribution', 'phase_RMSE', 'phase_ACC', 'focus_level_accuracy', 'phase_POD', 'phase_FAR']}, 'event_params': {'connected_dis_th': 25, 'move_dis_th': 25, 'related_dis_th': 30, 'min_grid_num': 1, 'val_change_th': 0.1, 'area_change_th': 0.1, 'area_remain_th': 0.9, 'attributes': ['area_type', 'pre_area', 'change_area', 'intensity_type', 'pre_intensity', 'change_intensity', 'move_type', 'move_dis'], 'error_metrics': ['area_error', 'intensity_error', 'shift_error', 'union_points_error']}, 'distribution_params': {'val_step': 10, 'extreme_percentile': 95}, 'range_params': {'scope': 'Seg_Points', 'sup_th': 0.005, 'err_th': 5, 'bin_num': 8, 'step_len': {'PM2.5-target_val': 10, 'PM2.5-temporal_state_vals': 10, 'PM2.5-space_comp_state_vals': 10, 'PM2.5-space_diff_state_vals': 10, 'PM2.5-temporal_context_mean': 10, 'PM2.5-temporal_context_trend': 1}}, 'slice_params': {'data_scope': 'All_Data', 'mode': 'Polarity_Pruning', 'polarity': 'High_Error', 'frequent_sup_th': 0.001, 'err_diff_th': 5, 'err_th': 20, 'redundancy_th': 0.4, 'phase_id': 'None'}, 'exp_id': 14173, 'eval': False, 'dataset_class': 'AirQualityDataset', 'executor': 'AirQualityExecutor', 'evaluator': 'AirQualityEvaluator', 'Ks': 3, 'Kt': 3, 'blocks': [[1, 32, 64], [64, 128, 256]], 'dropout': 0.5, 'graph_conv_type': 'chebconv', 'stgcn_train_mode': 'quick', 'bidir_adj_mx': True, 'max_epoch': 120, 'learner': 'adam', 'learning_rate': 0.001, 'lr_decay': True, 'lr_scheduler': 'multisteplr', 'lr_decay_ratio': 0.7, 'steps': [5, 15, 30, 50, 70, 90, 110], 'clip_grad_norm': True, 'max_grad_norm': 1, 'use_early_stop': True, 'patience': 30, 'batch_size': 64, 'cache_dataset': True, 'num_workers': 0, 'gpu': True, 'gpu_id': 0, 'train_loss': 'none', 'epoch': 0, 'weight_decay': 0, 'lr_epsilon': 1e-08, 'lr_beta1': 0.9, 'lr_beta2': 0.999, 'lr_alpha': 0.99, 'lr_momentum': 0, 'step_size': 10, 'lr_T_max': 30, 'lr_eta_min': 0, 'lr_threshold': 0.0001, 'log_level': 'INFO', 'log_every': 1, 'load_best_epoch': True, 'hyper_tune': False, 'metrics': ['MAE', 'MAPE', 'MSE', 'RMSE', 'masked_MAE', 'masked_MAPE', 'masked_MSE', 'masked_RMSE', 'R2', 'EVAR'], 'evaluator_mode': 'single', 'save_mode': ['csv'], 'geo': {'including_types': ['Point'], 'Point': {}}, 'rel': {'including_types': ['geo'], 'geo': {'distance': 'num'}}, 'dyna': {'including_types': ['state'], 'state': {'entity_id': 'geo_id', 'PM2.5': 'num', 'PM10': 'num', 'SO2': 'num', 'NO2': 'num', 'CO': 'num', 'O3': 'num', 'U': 'num', 'V': 'num', 'TEMP': 'num', 'RH': 'num', 'PSFC': 'num'}}, 'weight_col': 'distance', 'data_files': ['City-Beijing-71P_Hour-2014-2017'], 'geo_file': 'City-Beijing-71P_Hour-2014-2017', 'rel_file': 'City-Beijing-71P_Hour-2014-2017', 'output_dim': 1, 'init_weight_inf_or_zero': 'inf', 'set_weight_link_or_dist': 'dist', 'calculate_weight_adj': True, 'weight_adj_epsilon': 0.1, 'device': device(type='cuda', index=0)}
+2024-09-22 23:01:56,097 - INFO - Loaded file City-Beijing-71P_Hour-2014-2017.geo, num_nodes=71
+2024-09-22 23:01:56,097 - INFO - Loading file City-Beijing-71P_Hour-2014-2017.dyna
+2024-09-22 23:01:59,236 - INFO - Loaded file City-Beijing-71P_Hour-2014-2017.dyna, shape=(35064, 71, 11)
+2024-09-22 23:01:59,286 - INFO - set_weight_link_or_dist: dist
+2024-09-22 23:01:59,286 - INFO - init_weight_inf_or_zero: inf
+2024-09-22 23:01:59,296 - INFO - Loaded file City-Beijing-71P_Hour-2014-2017.rel, shape=(71, 71)
+2024-09-22 23:01:59,296 - INFO - Start Calculate the weight by _distance_inverse!
+2024-09-22 23:01:59,298 - INFO - Loading ./libcity/cache/dataset_cache/aug_air_quality_City-Beijing-71P_Hour-2014-2017_24_12_0.5_0.25_minmax01_balanced_mixup_MEMD_5_2_1.0_0.05.npz
+2024-09-22 23:02:46,161 - INFO - original_train	x: (17514, 24, 71, 11), y: (17514, 12, 71, 11)
+2024-09-22 23:02:46,162 - INFO - train	x: (35172, 24, 71, 11), y: (35172, 12, 71, 11)
+2024-09-22 23:02:46,162 - INFO - eval	x: (8758, 24, 71, 11), y: (8758, 12, 71, 11)
+2024-09-22 23:02:46,163 - INFO - test	x: (8757, 24, 71, 11), y: (8757, 12, 71, 11)
+2024-09-22 23:02:47,188 - INFO - MinMax01Scaler max: [829.59], min: [-162.11569954]
+2024-09-22 23:02:51,120 - INFO - MinMax01Scaler max: [1.2260300e+03 5.9556000e+02 3.6491000e+02 1.4220000e+01 4.8699000e+02
+ 1.9760000e+01 1.3090000e+01 3.1252000e+02 1.0000000e+02 1.0422886e+05], min: [-1.80060773e+02 -4.30536528e+01 -3.64357818e+01 -1.42747990e+00
+ -2.30814627e+01 -1.56600000e+01 -2.30900000e+01 -2.77479417e+00
+ -1.34345234e+01 -3.51358275e+03]
+2024-09-22 23:03:40,283 - INFO - You select quick mode to train STGCN model.
+2024-09-22 23:03:42,175 - INFO - Chebyshev_polynomial_Lk shape: (3, 71, 71)
+2024-09-22 23:03:47,597 - INFO - STGCN(
+  (st_conv1): STConvBlock(
+    (tconv1): TemporalConvLayer(
+      (align): Align()
+      (conv): Conv2d(11, 64, kernel_size=(3, 1), stride=(1, 1))
+    )
+    (sconv): SpatioConvLayer(
+      (align): Align()
+    )
+    (tconv2): TemporalConvLayer(
+      (align): Align()
+      (conv): Conv2d(32, 64, kernel_size=(3, 1), stride=(1, 1))
+    )
+    (ln): LayerNorm((71, 64), eps=1e-05, elementwise_affine=True)
+    (dropout): Dropout(p=0.5, inplace=False)
+  )
+  (st_conv2): STConvBlock(
+    (tconv1): TemporalConvLayer(
+      (align): Align()
+      (conv): Conv2d(64, 256, kernel_size=(3, 1), stride=(1, 1))
+    )
+    (sconv): SpatioConvLayer(
+      (align): Align()
+    )
+    (tconv2): TemporalConvLayer(
+      (align): Align()
+      (conv): Conv2d(128, 256, kernel_size=(3, 1), stride=(1, 1))
+    )
+    (ln): LayerNorm((71, 256), eps=1e-05, elementwise_affine=True)
+    (dropout): Dropout(p=0.5, inplace=False)
+  )
+  (output): OutputLayer(
+    (tconv1): TemporalConvLayer(
+      (align): Align()
+      (conv): Conv2d(256, 512, kernel_size=(16, 1), stride=(1, 1))
+    )
+    (ln): LayerNorm((71, 256), eps=1e-05, elementwise_affine=True)
+    (tconv2): TemporalConvLayer(
+      (align): Align()
+      (conv): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (fc): FullyConvLayer(
+      (conv): Conv2d(256, 1, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+)
+2024-09-22 23:03:47,627 - INFO - st_conv1.tconv1.conv.weight	torch.Size([64, 11, 3, 1])	cuda:0	True
+2024-09-22 23:03:47,628 - INFO - st_conv1.tconv1.conv.bias	torch.Size([64])	cuda:0	True
+2024-09-22 23:03:47,629 - INFO - st_conv1.sconv.theta	torch.Size([32, 32, 3])	cuda:0	True
+2024-09-22 23:03:47,629 - INFO - st_conv1.sconv.b	torch.Size([1, 32, 1, 1])	cuda:0	True
+2024-09-22 23:03:47,629 - INFO - st_conv1.tconv2.conv.weight	torch.Size([64, 32, 3, 1])	cuda:0	True
+2024-09-22 23:03:47,629 - INFO - st_conv1.tconv2.conv.bias	torch.Size([64])	cuda:0	True
+2024-09-22 23:03:47,630 - INFO - st_conv1.ln.weight	torch.Size([71, 64])	cuda:0	True
+2024-09-22 23:03:47,630 - INFO - st_conv1.ln.bias	torch.Size([71, 64])	cuda:0	True
+2024-09-22 23:03:47,630 - INFO - st_conv2.tconv1.conv.weight	torch.Size([256, 64, 3, 1])	cuda:0	True
+2024-09-22 23:03:47,630 - INFO - st_conv2.tconv1.conv.bias	torch.Size([256])	cuda:0	True
+2024-09-22 23:03:47,630 - INFO - st_conv2.sconv.theta	torch.Size([128, 128, 3])	cuda:0	True
+2024-09-22 23:03:47,631 - INFO - st_conv2.sconv.b	torch.Size([1, 128, 1, 1])	cuda:0	True
+2024-09-22 23:03:47,631 - INFO - st_conv2.tconv2.conv.weight	torch.Size([256, 128, 3, 1])	cuda:0	True
+2024-09-22 23:03:47,631 - INFO - st_conv2.tconv2.conv.bias	torch.Size([256])	cuda:0	True
+2024-09-22 23:03:47,631 - INFO - st_conv2.ln.weight	torch.Size([71, 256])	cuda:0	True
+2024-09-22 23:03:47,632 - INFO - st_conv2.ln.bias	torch.Size([71, 256])	cuda:0	True
+2024-09-22 23:03:47,632 - INFO - output.tconv1.conv.weight	torch.Size([512, 256, 16, 1])	cuda:0	True
+2024-09-22 23:03:47,632 - INFO - output.tconv1.conv.bias	torch.Size([512])	cuda:0	True
+2024-09-22 23:03:47,632 - INFO - output.ln.weight	torch.Size([71, 256])	cuda:0	True
+2024-09-22 23:03:47,633 - INFO - output.ln.bias	torch.Size([71, 256])	cuda:0	True
+2024-09-22 23:03:47,633 - INFO - output.tconv2.conv.weight	torch.Size([256, 256, 1, 1])	cuda:0	True
+2024-09-22 23:03:47,633 - INFO - output.tconv2.conv.bias	torch.Size([256])	cuda:0	True
+2024-09-22 23:03:47,633 - INFO - output.fc.conv.weight	torch.Size([1, 256, 1, 1])	cuda:0	True
+2024-09-22 23:03:47,634 - INFO - output.fc.conv.bias	torch.Size([1])	cuda:0	True
+2024-09-22 23:03:47,634 - INFO - Total parameter numbers: 2454241
+2024-09-22 23:03:47,634 - INFO - You select `adam` optimizer.
+2024-09-22 23:03:47,649 - INFO - You select `multisteplr` lr_scheduler.
+2024-09-22 23:03:47,650 - WARNING - Received none train loss func and will use the loss func defined in the model.
+2024-09-22 23:03:47,651 - INFO - Loaded model at ./libcity/cache/14173/model_cache/STGCN_City-Beijing-71P_Hour-2014-2017.m

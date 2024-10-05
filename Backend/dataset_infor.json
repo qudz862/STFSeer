@@ -1,0 +1,456 @@
+{
+  "METR_LA": {
+    "Place": "Los Angeles County, USA",
+    "Duration": {
+      "start": "2012-03-01",
+      "end": "2012-06-27"
+    },
+    "Interval": "5 min",
+    "Geo_num": 207,
+    "Relation_num": 11753,
+    "Dynamic_num": 7094304,
+    "Data_type":"Graph Speed",
+    "Description": "The METR-LA dataset collected in the highway by loop detectors, contains traffic speed data from 207 sensors."
+  },
+  "LOS_LOOP": {
+    "Place": "Los Angeles County, USA",
+    "Duration": {
+      "start": "2012-03-01",
+      "end": "2012-06-27"
+    },
+    "Interval": "5 min",
+    "Geo_num": 207,
+    "Relation_num": 42849,
+    "Dynamic_num": 7094304,
+    "Data_type":"Graph Speed",
+    "Description": "It is slightly different from METR_LA, and the missing values are supplemented by linear interpolation."
+  },
+  "LOS_LOOP_SMALL": {
+    "Place": "Los Angeles County, USA",
+    "Duration": {
+      "start": "2012-03-01",
+      "end": "2012-03-05"
+    },
+    "Interval": "5 min",
+    "Geo_num": 207,
+    "Relation_num": 42849,
+    "Dynamic_num": 417312,
+    "Data_type":"Graph Speed",
+    "Description": "It is the small LOS_LOOP dataset with only 5 days."
+  },
+  "SZ_TAXI": {
+    "Place": "Shenzhen, China",
+    "Duration": {
+      "start": "2015-01-01",
+      "end": "2015-01-31"
+    },
+    "Interval": "15 min",
+    "Geo_num": 156,
+    "Relation_num": 24336,
+    "Dynamic_num": 464256,
+    "Data_type": "Graph Speed",
+    "Description": "The SZ-Taxi dataset contains the taxi trajectory of Shenzhen, including roads adjacency matrix and road traffic speed information."
+  },
+  "LOOP_SEATTLE": {
+    "Place": "Greater Seattle Area, USA",
+    "Duration": {
+      "start": "2015-01-01",
+      "end": "2015-12-31"
+    },
+    "Interval": "5 min",
+    "Geo_num": 323,
+    "Relation_num": 104329,
+    "Dynamic_num": 33953760,
+    "Description": "The Loop Seattle dataset is collected by the inductive loop detectors deployed on freeways (I-5, I-405, I-90, and SR-520) in Seattle area and contains traffic state data from 323 sensor stations."
+  },
+  "Q_TRAFFIC": {
+    "Place": "Beijing, China",
+    "Duration": {
+      "start": "2017-04-01",
+      "end": "2017-05-31"
+    },
+    "Interval": "15 min",
+    "Geo_num": 45148,
+    "Relation_num": 63422,
+    "Dynamic_num": 264386688,
+    "Data_type":"Graph Speed",
+    "Description": "The Q-Traffic dataset contains three sub-datasets: query sub-dataset, traffic speed sub-dataset and road network sub-dataset."
+  },
+  "PEMSD3": {
+    "Place": "California, USA",
+    "Duration": {
+      "start": "2018-09-01",
+      "end": "2018-11-30"
+    },
+    "Interval": "5 min",
+    "Geo_num": 358,
+    "Relation_num": 547,
+    "Dynamic_num": 9382464,
+    "Description": "The PEMSD3 dataset includes 358 sensors and flow information."
+  },
+  "PEMSD4": {
+    "Place": "San Francisco Bay Area, USA",
+    "Duration": {
+      "start": "2018-01-01",
+      "end": "2018-02-28"
+    },
+    "Interval": "5 min",
+    "Geo_num": 307,
+    "Relation_num": 340,
+    "Dynamic_num": 5216544,
+    "Description": "The PEMSD4 dataset describes the the speed flow occupancy information of California freeway and contains 3848 sensors on 29 roads."
+  },
+  "PEMSD7": {
+    "Place": "California, USA",
+    "Duration": {
+      "start": "2017-05-01",
+      "end": "2017-08-31"
+    },
+    "Interval": "5 min",
+    "Geo_num": 883,
+    "Relation_num": 866,
+    "Dynamic_num": 24921792,
+    "Description": "The PEMSD7 dataset contains traffic flow information from 883 sensor stations."
+  },
+  "PEMSD8": {
+    "Place": "San Bernardino Area, USA",
+    "Duration": {
+      "start": "2016-07-01",
+      "end": "2016-08-31"
+    },
+    "Interval": "5 min",
+    "Geo_num": 170,
+    "Relation_num": 277,
+    "Dynamic_num": 3035520,
+    "Description": "The PEMSD8 dataset describes the speed occupancy of California freeways with data from 1979 sensors on 8 roads."
+  },
+  "PEMSD7(M)": {
+    "Place": "California, USA",
+    "Duration": {
+      "start": "2012-05-01",
+      "end": "2012-06-30"
+    },
+    "Interval": "5 min",
+    "Geo_num": 228,
+    "Relation_num": 51984,
+    "Dynamic_num": 2889216,
+    "Description": "The PEMSD7(M) dataset describes highway speed information at 228 stations in the 7th District of California."
+  },
+  "PEMS_BAY": {
+    "Place": "San Francisco Bay Area, USA",
+    "Duration": {
+      "start": "2017-01-01",
+      "end": "2017-06-30"
+    },
+    "Interval": "5 min",
+    "Geo_num": 325,
+    "Relation_num": 8358,
+    "Dynamic_num": 16937700,
+    "Data_type": "Graph Speed",
+    "Description": "The PEMS-BAY dataset contains 6 months of statistics on traffic speed, including 325 sensors."
+  },
+  "BEIJING_SUBWAY": {
+    "Place": "Beijing, China",
+    "Duration": {
+      "start": "2016-02-29",
+      "end": "2016-04-03"
+    },
+    "Interval": "30 min",
+    "Geo_num": 276,
+    "Relation_num": 76176,
+    "Dynamic_num": 248400,
+    "Description": "This dataset is collected from the Beijing subway between 05:00 and 23:00 for five consecutive weeks from February 29 to April 3, 2016. There were 17 lines and 276 subway stations (excluding the airport express line and the stations on it) in March 2016 in Beijing."
+  },
+  "M_DENSE": {
+    "Place": "Madrid, Spain",
+    "Duration": {
+      "start": "2018-01-01",
+      "end": "2019-12-21"
+    },
+    "Interval": "60 min",
+    "Geo_num": 30,
+    "Relation_num": 0,
+    "Dynamic_num": 525600,
+    "Description": "This dataset contains historical data of traffic measurements in the city of Madrid. The measurements are taken every 15 minutes at each point, including traffic intensity in number of cars per hour."
+  },
+  "SHMETRO": {
+    "Place": "Shanghai, China",
+    "Duration": {
+      "start": "2016-07-01",
+      "end": "2016-09-30"
+    },
+    "Interval": "15 min",
+    "Geo_num": 288,
+    "Relation_num": 82944,
+    "Dynamic_num": 1934208,
+    "Description": "This dataset was built based on the metro system of Shanghai, China. A total of 811.8 million transaction records were collected from Jul. 1st 2016 to Sept. 30th 2016, with 8.82 million ridership per day."
+  },
+  "HZMETRO": {
+    "Place": "Hangzhou, China",
+    "Duration": {
+      "start": "2019-01-01",
+      "end": "2019-01-25"
+    },
+    "Interval": "15 min",
+    "Geo_num": 80,
+    "Relation_num": 6400,
+    "Dynamic_num": 146000,
+    "Description": "This dataset was created with the transaction records of the Hangzhou metro system collected in January 2019. With 80 operational stations and 248 physical edges, this system has 2.35 million ridership per day."
+  },
+  "NYCTAXI202001-202003_DYNA": {
+    "Place": "New York, USA",
+    "Duration": {
+      "start": "2020-01-01",
+      "end": "2020-03-30"
+    },
+    "Interval": "60 min",
+    "Geo_num": 263,
+    "Relation_num": 69169,
+    "Dynamic_num": 574392,
+    "Description": ""
+  },
+  "TAXIBJ2013": {
+    "Place": "Beijing, China",
+    "Duration": {
+      "start": "2013-07-01",
+      "end": "2013-10-30"
+    },
+    "Interval": "30 min",
+    "Geo_num": [32, 32],
+    "Relation_num": 0,
+    "Dynamic_num": 4964352,
+    "Data_type": "Grid In&Out Flow",
+    "Description": "The TaxiBJ dataset contains the taxicab GPS data, including crowd flow, meteorology and holiday information."
+  },
+  "TAXIBJ2014": {
+    "Place": "Beijing, China",
+    "Duration": {
+      "start": "2014-03-01",
+      "end": "2014-06-30"
+    },
+    "Interval": "30 min",
+    "Geo_num": [32, 32],
+    "Relation_num": 0,
+    "Dynamic_num": 4472832,
+    "Data_type": "Grid In&Out Flow",
+    "Description": "The TaxiBJ dataset contains the taxicab GPS data, including crowd flow, meteorology and holiday information."
+  },
+  "TAXIBJ2015": {
+    "Place": "Beijing, China",
+    "Duration": {
+      "start": "2015-03-01",
+      "end": "2015-06-30"
+    },
+    "Interval": "30 min",
+    "Geo_num": [32, 32],
+    "Relation_num": 0,
+    "Dynamic_num": 5652480,
+    "Data_type": "Grid In&Out Flow",
+    "Description": "The TaxiBJ dataset contains the taxicab GPS data, including crowd flow, meteorology and holiday information."
+  },
+  "TAXIBJ2016": {
+    "Place": "Beijing, China",
+    "Duration": {
+      "start": "2015-11-01",
+      "end": "2015-04-10"
+    },
+    "Interval": "30 min",
+    "Geo_num": [32, 32],
+    "Relation_num": 0,
+    "Dynamic_num": 6782976,
+    "Data_type": "Grid In&Out Flow",
+    "Description": "The TaxiBJ dataset contains the taxicab GPS data, including crowd flow, meteorology and holiday information."
+  },
+  "T_DRIVE20150206": {
+    "Place": "Beijing, China",
+    "Duration": {
+      "start": "2015-02-01",
+      "end": "2015-06-30"
+    },
+    "Interval": "60 min",
+    "Geo_num": [32, 32],
+    "Relation_num": 1048576,
+    "Dynamic_num": 3686400,
+    "Description": "The T-Drive trajectory dataset sample containing the weekly trajectories of 10,357 Beijing taxis is about 15 million points, and the total distance of trajectories reaches 9 million kilometers."
+  },
+  "PORTO201307-201309": {
+    "Place": "Porto, Portugal",
+    "Duration": {
+      "start": "2013-07-01",
+      "end": "2013-09-30"
+    },
+    "Interval": "60 min",
+    "Geo_num": [20, 10],
+    "Relation_num": 0,
+    "Dynamic_num": 441600,
+    "Description": "The Porto dataset describes trajectories performed by all the 442 taxis running in the city of Porto, in Portugal."
+  },
+  "BIKEDC202007-202009": {
+    "Place": "Washington, USA",
+    "Duration": {
+      "start": "2020-07-01",
+      "end": "2020-09-30"
+    },
+    "Interval": "60 min",
+    "Geo_num": [16, 8],
+    "Relation_num": 0,
+    "Dynamic_num": 282624,
+    "Description": "The BikeDC dataset describes the bike trails of the Washington Bicycle System, which includes 472 stops."
+  },
+  "BIKECHI202007-202009": {
+    "Place": "Chicago, USA",
+    "Duration": {
+      "start": "2020-07-01",
+      "end": "2020-09-30"
+    },
+    "Interval": "30 min",
+    "Geo_num": [15, 18],
+    "Relation_num": 0,
+    "Dynamic_num": 1192320,
+    "Description": "The BikeCHI dataset shows the development of bike-sharing in Chicago from 2013 to 2018."
+  },
+  "NYCTaxi20150103": {
+    "Place": "New York, USA",
+    "Duration": {
+      "start": "2015-01-01",
+      "end": "2015-03-01"
+    },
+    "Interval": "30 min",
+    "Geo_num": [10, 20],
+    "Relation_num": 0,
+    "Dynamic_num": 576000,
+    "Description": "The NYC-Taxi dataset contains trajectories of different types of taxi collected by GPS for New York City from 2009 to 2020."
+  },
+  "NYCBike20160708": {
+    "Place": "New York, USA",
+    "Duration": {
+      "start": "2016-07-01",
+      "end": "2016-08-29"
+    },
+    "Interval": "30 min",
+    "Geo_num": [10, 20],
+    "Relation_num": 0,
+    "Dynamic_num": 576000,
+    "Description": "The NYC-Bike dataset contains bike trajectories collected from NYC CitiBike system."
+  },
+  "City-Anshan-41P_20130101-20181231": {
+    "Place": "Anshan, China",
+    "Duration": {
+      "start": "2013-01-01",
+      "end": "2018-12-31"
+    },
+    "Interval": "1 day",
+    "Geo_num": 41,
+    "Relation_num": 0,
+    "Dynamic_num": 89831,
+    "Features": ["PM2.5", "PM10", "SO2", "NO2", "CO", "O3", "U", "V", "TEMP", "RH", "PSFC", "boundary_layer_h", "lat", "lon", "elevation", "vegetation_index"],
+    "Data_type": "Graph Air Quality",
+    "Description": "All features without pollution source for Anshan city from 2013 to 2018."
+  },
+  "City-Beijing-71P_20130101-20181231": {
+    "Place": "Beijing, China",
+    "Duration": {
+      "start": "2013-01-01",
+      "end": "2018-12-31"
+    },
+    "Interval": "1 day",
+    "Geo_num": 71,
+    "Relation_num": 0,
+    "Dynamic_num": 155561,
+    "Features": ["PM2.5", "PM10", "SO2", "NO2", "CO", "O3", "U", "V", "TEMP", "RH", "PSFC", "boundary_layer_h", "lat", "lon", "elevation", "vegetation_index"],
+    "Data_type": "Graph Air Quality",
+    "Description": "All features without pollution source for Beijing city from 2013 to 2018."
+  },
+  "City-Beijing-71P_Hour-201301-201801": {
+    "Place": "Beijing, China",
+    "Duration": [
+      "2013/01", "2014/01", "2015/01", "2016/01", "2017/01", "2018/01"
+    ],
+    "Interval": "1 hour",
+    "Geo_num": 71,
+    "Relation_num": 0,
+    "Dynamic_num": 316944,
+    "Features": ["PM2.5", "PM10", "SO2", "NO2", "CO", "O3", "U", "V", "TEMP", "RH", "PSFC", "boundary_layer_h", "lat", "lon", "elevation"],
+    "Data_type": "Graph Air Quality",
+    "Description": "Hourly data of all features without vegetation_index for Beijing city from 2013-01 to 2018-01."
+  },
+  "City-aaa-71P_Hour-201301-201801": {
+    "Place": "Beijing, China",
+    "Duration": [
+      "2013/01", "2014/01", "2015/01", "2016/01", "2017/01", "2018/01"
+    ],
+    "Interval": "1 hour",
+    "Geo_num": 71,
+    "Relation_num": 0,
+    "Dynamic_num": 316944,
+    "Features": ["PM2.5", "PM10", "SO2", "NO2", "CO", "O3", "U", "V", "TEMP", "RH", "PSFC", "boundary_layer_h", "lat", "lon", "elevation"],
+    "Data_type": "Graph Air Quality",
+    "Description": "Hourly data of all features without vegetation_index for Beijing city from 2013-01 to 2018-01."
+  },
+  "City-Beijing-71P_Hour-201301-201701": {
+    "Place": "Beijing, China",
+    "Duration": [
+      "2013/01", "2014/01", "2015/01", "2016/01", "2017/01"
+    ],
+    "Interval": "1 hour",
+    "Geo_num": 71,
+    "Relation_num": 0,
+    "Dynamic_num": 264120, 
+    "Features": ["PM2.5", "PM10", "SO2", "NO2", "CO", "O3", "U", "V", "TEMP", "RH", "PSFC", "boundary_layer_h", "lat", "lon", "elevation"],
+    "Data_type": "Graph Air Quality",
+    "Description": "Hourly data of Beijing city from 2013-01 to 2017-01.",
+    "Default_config": "aq_pred_config_hour"
+  },
+  "Beijing_Tianjin-144P_Hour-201301-201701": {
+    "Place": "Beijing, China",
+    "Duration": [
+      "2013/01", "2014/01", "2015/01", "2016/01", "2017/01"
+    ],
+    "Interval": "1 hour",
+    "Geo_num": 144,
+    "Relation_num": 0,
+    "Dynamic_num": 264120, 
+    "Features": ["PM2.5", "PM10", "SO2", "NO2", "CO", "O3", "U", "V", "TEMP", "RH", "PSFC", "boundary_layer_h", "elevation"],
+    "Data_type": "Grid Air Quality",
+    "Description": "Hourly data of Beijing city and Tianjin city from 2013-01 to 2017-01.",
+    "Default_config": "aq_pred_config_hour"
+  },
+  "City-Beijing-71P_Hour-201301-201801_Climate": {
+    "Place": "Beijing, China",
+    "Duration": [
+      "2013/01", "2014/01", "2015/01", "2016/01", "2017/01", "2018/01"
+    ],
+    "Interval": "1 hour",
+    "Geo_num": 71,
+    "Relation_num": 0,
+    "Dynamic_num": 316944,
+    "Features": ["PM2.5", "PM10", "SO2", "NO2", "CO", "O3", "U", "V", "TEMP", "RH", "PSFC"],
+    "Data_type": "Graph Air Quality",
+    "Description": "Hourly data of air quality and climate features for Beijing city from 2013-01 to 2018-01.",
+    "Default_config": "aq_pred_config_hour"
+  },
+  "City-Beijing-71P_Hour-2014-2017": {
+    "Place": "Beijing, China",
+    "Year": ["2014", "2015", "2016", "2017"],
+    "Duration": {
+      "start": "2014-01-01 00",
+      "end": "2018-12-31 23"
+    },
+    "Interval": "1 hour",
+    "Geo_num": 71,
+    "Relation_num": 0,
+    "Dynamic_num": 2489544,
+    "Features": ["PM2.5", "PM10", "SO2", "NO2", "CO", "O3", "U", "V", "TEMP", "RH", "PSFC"],
+    "Data_type": "Graph Air Quality",
+    "Description": "Hourly data of air quality and climate features for Beijing city from 2014 to 2017.",
+    "Default_config": "config_pos_subgroups",
+    "Config_files": [
+      {"config_name": "config_pos_subgroups",
+      "descriptions": "Identifying subgroups with high residuals."},
+      {"config_name": "config_neg_subgroups",
+      "descriptions": "Identifying subgroups with low residuals."},
+      {"config_name": "config_climate_pos_subgroups",
+      "descriptions": "Identifying subgroups of climate attributes with low residuals."}
+    ]
+  }
+}
